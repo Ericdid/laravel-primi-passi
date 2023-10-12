@@ -18,6 +18,6 @@ Route::get('/', function () {
         'title' => 'primi passi con laravel',
         'content' => 'Hello World!!!'
     ];
-    
+
     return view('home',$data);
 });
