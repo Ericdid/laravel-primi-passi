@@ -26,15 +26,15 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-3">
+    <div class="container text-center">
+        <h1> {{ $bonus_title }} </h1>
         <div class="row">
-            @foreach ($contents as $content)
-                <div class="col">
-                    <h2>{{ $content }}</h2>
-                </div>
-            @endforeach
+            <p> {{ $bonus_txt }} </p>
         </div>
     </div>
+
+
+
 </body>
 
 </html>

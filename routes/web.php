@@ -27,3 +27,19 @@ Route::get('/', function () {
 
     return view('home', $data, compact('contents'));
 })->name('homepage');
+
+Route::get('/bonus', function () {
+    $data = [
+        'title' => 'primi passi con laravel',
+        'nomePagina' => 'Pagina Bonus'
+    ];
+
+
+    $bonus = [
+        'bonus_title' => 'titolo bonus',
+        'bonus_txt' => 'testo bonus'
+    ];
+
+    return view('bonus', $bonus, $data);
+
+})->name('bonus');
