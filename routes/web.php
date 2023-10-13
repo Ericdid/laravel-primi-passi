@@ -16,9 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'title' => 'primi passi con laravel',
-        'content' => 'Hello World!!!',
         'nomePagina' => 'Pagina Bonus'
     ];
 
-    return view('home', $data);
+    $contents = [
+        'content-1',
+        'content-2',
+        'content-3'
+    ];
+
+    return view('home', $data, compact('contents'));
 })->name('homepage');

@@ -26,6 +26,15 @@
             </div>
         </div>
     </nav>
+    <div class="container mt-3">
+        <div class="row">
+            @foreach ($contents as $content)
+                <div class="col">
+                    <h2>{{ $content }}</h2>
+                </div>
+            @endforeach
+        </div>
+    </div>
 </body>
 
 </html>
